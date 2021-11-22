@@ -26,7 +26,21 @@ body {
 .site-nav .link.current {
   color: var(--primary-blue-color);
 }
-/* мейн стили */
+.header-contacts {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--primary-blue-color);
+}
+/* BODY стили */
+.main-title {
+  color: var(--white-colour);
+}
+.order-service {
+  color: var(--white-colour);
+}
 .sections-title {
   font-size: 42px;
   color: var(--secondary-text-color);
@@ -35,7 +49,7 @@ body {
 .list {
   list-style: none;
 }
-.list > li {
+.list > .social-links {
   list-style: none;
 }
 .clients {
@@ -56,4 +70,11 @@ footer {
 }
 .foot-contacts {
   color: var(--primary-text-color);
+}
+.foot-contacts {
+  text-decoration: none;
+}
+.foot-contacts:hover,
+.foot-contacts:focus {
+  color: var(--primary-blue-color);
 }
