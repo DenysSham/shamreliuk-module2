@@ -1,4 +1,59 @@
-.table1 {
-  border: 10px solid rgb(25, 181, 30);
-  color: rgb(191, 50, 50);
+/* РУТ ЦВЕТА */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #000;
+  --primary-blue-color: #2196f3;
+  --white-colour: #ffffff;
+  --portfolio-main-color: #212121;
+}
+/* ОБЩИЕ НАСТРОЙКИ */
+body {
+  font-family: 'roboto';
+  color: var(--primary-text-color);
+}
+/* ХЕДЕР */
+.logo {
+  font-family: 'raleway';
+  font-size: 26px;
+
+  color: var(--primary-blue-color);
+}
+.header-logo {
+  font-family: 'raleway';
+  font-size: 26px;
+  color: var(--secondary-text-color);
+}
+.site-nav .link.current {
+  color: var(--primary-blue-color);
+}
+/* мейн стили */
+.sections-title {
+  font-size: 42px;
+  color: var(--secondary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+.list > li {
+  list-style: none;
+}
+.clients {
+  list-style: none;
+}
+
+/* СТИЛИ ФУТЕРА */
+footer {
+  background-color: #2f303a;
+}
+.footer-logo {
+  font-family: 'raleway';
+  color: var(--white-colour);
+}
+
+.street {
+  color: var(--white-colour);
+}
+.foot-contacts {
+  color: var(--primary-text-color);
 }
