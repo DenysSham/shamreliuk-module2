@@ -9,7 +9,7 @@
 }
 /* ОБЩИЕ НАСТРОЙКИ */
 body {
-  font-family: 'roboto', sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--primary-text-color);
 }
 .list {
@@ -20,7 +20,7 @@ body {
 }
 /* ХЕДЕР */
 .logo {
-  font-family: 'Raleway';
+  font-family: Raleway;
   font-style: normal;
   font-size: 26px;
   line-height: 1.19;
@@ -31,7 +31,7 @@ body {
   color: var(--current-color);
 }
 .header-logo {
-  font-family: 'Raleway';
+  font-family: Raleway;
   font-style: normal;
   font-size: 26px;
   line-height: 1.19;
@@ -168,7 +168,7 @@ footer {
   background-color: var(--background);
 }
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
   color: var(--white-colour);
