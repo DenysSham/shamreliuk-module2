@@ -1,30 +1,53 @@
 /* РУТ ЦВЕТА */
 :root {
-  --primary-text-color: #757575;
-  --secondary-text-color: #000;
-  --primary-blue-color: #2196f3;
+  --secondary-text-color: #757575;
+  --primary-text-color: #212121;
+  --current-color: #2196f3;
   --white-colour: #ffffff;
-  --portfolio-main-color: #212121;
 }
 /* ОБЩИЕ НАСТРОЙКИ */
 body {
-  font-family: 'roboto';
+  font-family: 'roboto', sans-serif;
   color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 /* ХЕДЕР */
 .logo {
-  font-family: 'raleway';
+  font-family: 'Raleway';
+  font-weight: bold;
   font-size: 26px;
-
-  color: var(--primary-blue-color);
+  line-height: 1.19;
+  color: var(--current-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--current-color);
 }
 .header-logo {
-  font-family: 'raleway';
+  font-family: 'Raleway';
+  font-weight: bold;
   font-size: 26px;
-  color: var(--secondary-text-color);
+  line-height: 1.19;
+  color: var(--primary-text-color);
 }
-.site-nav .link.current {
-  color: var(--primary-blue-color);
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--primary-text-color);
+}
+.site-nav {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.current {
+  color: var(--current-color);
 }
 .header-contacts {
   text-decoration: none;
@@ -45,15 +68,9 @@ body {
   font-size: 42px;
   color: var(--secondary-text-color);
 }
-
-.list {
-  list-style: none;
+.features-title {
 }
-.list > .social-links {
-  list-style: none;
-}
-.clients {
-  list-style: none;
+.features-paragpaph {
 }
 
 /* СТИЛИ ФУТЕРА */
@@ -72,7 +89,6 @@ footer {
   color: var(--primary-text-color);
 }
 .foot-contacts {
-  text-decoration: none;
 }
 .foot-contacts:hover,
 .foot-contacts:focus {

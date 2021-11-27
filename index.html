@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/slyles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html">
-          <span class="logo">Web</span><span class="header-logo">Studio</span></a
+      <nav class="nav">
+        <a href="./index.html" class="link">
+          <span class="logo">Web</span><span class="header-logo link">Studio</span></a
         >
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <li><a href="./index.html" class="nav-link link current">Студия</a></li>
+          <li><a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
+          <li><a href="" class="nav-link link">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="list">
-        <li><a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="header-contacts list">
+        <li>
+          <a class="header-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li><a class="header-contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
-    <main>
+    <main class="main-inf">
       <section>
         <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="order-service">Заказать услугу</button>
       </section>
       <section>
-        <h2 class="sections-title">Особенности</h2>
-        <ul class="list">
+        <h2 class="sections-title hide-title">Особенности</h2>
+        <ul class="features-list list">
           <li>
-            <img src="./images/svg/antene.svg" alt="" />
-            <h3>Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <img src="./images/svg/antene.svg" class="svg-picture" alt="спутниковая тарелка" />
+            <h3 class="features-title">Внимание к деталям</h3>
+            <p class="features-paragraph">
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
           </li>
           <li>
-            <img src="./images/svg/clock.svg" alt="" />
-            <h3>Пунктуальность</h3>
-            <p>
+            <img src="./images/svg/clock.svg" class="svg-picture" alt="часы" />
+            <h3 class="features-title">Пунктуальность</h3>
+            <p class="features-paragraph">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li>
-            <img src="./images/svg/comp.svg" alt="" />
-            <h3>Планирование</h3>
-            <p>
+            <img src="./images/svg/comp.svg" class="svg-picture" alt="компьютерный график" />
+            <h3 class="features-title">Планирование</h3>
+            <p class="features-paragraph">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li>
-            <img src="./images/svg/astronaut 1.svg" alt="" />
-            <h3>Современные технологии</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <img src="./images/svg/astronaut.svg" class="svg-picture" alt="космонавт" />
+            <h3 class="features-title">Современные технологии</h3>
+            <p class="features-paragraph">
+              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            </p>
           </li>
         </ul>
       </section>
       <section>
         <h2 class="sections-title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="list">
           <li>
-            <img src="./images/development.jpg" alt="разработка сайтов" width="370" />
+            <img
+              src="./images/development.jpg"
+              class="wwd-picture"
+              alt="Десктопные приложения"
+              width="370"
+            />
           </li>
           <li>
-            <img src="./images/adaptation.jpg" alt="адаптация сайтов под гаджеты" width="370" />
+            <img
+              src="./images/adaptation.jpg"
+              class="wwd-picture"
+              alt="Мобильные приложения"
+              width="370"
+            />
           </li>
           <li>
-            <img src="./images/palette.jpg" alt="палитра" width="370" />
+            <img
+              src="./images/palette.jpg"
+              class="wwd-picture"
+              alt="Дизайнерские решения"
+              width="370"
+            />
           </li>
         </ul>
       </section>
@@ -81,102 +103,134 @@
         <ul class="list">
           <li>
             <img src="./images/igor.jpg" alt="Игорь" width="270" />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <h3 class="worker">Игорь Демьяненко</h3>
+            <p class="proffession">Product Designer</p>
           </li>
           <ul class="list">
             <li>
-              <a href=""><img src="./images/svg/inst.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/inst.svg" class="social-links" alt="Instagram"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/twitter.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/twitter.svg" class="social-links" alt="Twitter"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/facebook.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/facebook.svg" class="social-links" alt="Facebook"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/linkedin.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/linkedin.svg" class="social-links" alt="Linkedin"
+              /></a>
             </li>
           </ul>
           <li>
             <img src="./images/olga.jpg" alt="Ольга" width="270" />
-            <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
+            <h3 class="worker">Ольга Репина</h3>
+            <p class="proffession">Frontend Developer</p>
           </li>
           <ul class="list">
             <li>
-              <a href=""><img src="./images/svg/inst.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/inst.svg" class="social-links" alt="Instagram"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/twitter.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/twitter.svg" class="social-links" alt="Twitter"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/facebook.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/facebook.svg" class="social-links" alt="Facebook"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/linkedin.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/linkedin.svg" class="social-links" alt="Linkedin"
+              /></a>
             </li>
           </ul>
           <li>
             <img src="./images/kolya.jpg" alt="Николай" width="270" />
-            <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
+            <h3 class="worker">Николай Тарасов</h3>
+            <p class="proffession">Marketing</p>
           </li>
           <ul class="list">
             <li>
-              <a href=""><img src="./images/svg/inst.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/inst.svg" class="social-links" alt="Instagram"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/twitter.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/twitter.svg" class="social-links" alt="Twitter"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/facebook.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/facebook.svg" class="social-links" alt="Facebook"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/linkedin.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/linkedin.svg" class="social-links" alt="Linkedin"
+              /></a>
             </li>
           </ul>
           <li>
             <img src="./images/misha.jpg" alt="Михаил" width="270" />
-            <h3>Михаил Ермаков</h3>
-            <p>UI Designer</p>
+            <h3 class="worker">Михаил Ермаков</h3>
+            <p class="proffession">UI Designer</p>
           </li>
           <ul class="list">
             <li>
-              <a href=""><img src="./images/svg/inst.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/inst.svg" class="social-links" alt="Instagram"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/twitter.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/twitter.svg" class="social-links" alt="Twitter"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/facebook.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/facebook.svg" class="social-links" alt="Facebook"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/svg/linkedin.svg" alt="" /></a>
+              <a href=""
+                ><img src="./images/svg/linkedin.svg" class="social-links" alt="Linkedin"
+              /></a>
             </li>
           </ul>
         </ul>
       </section>
-      <section class="">
+      <section>
         <h2 class="sections-title">Постоянные клиенты</h2>
-        <ul class="clients">
+        <ul class="clients list">
           <li>
-            <a href=""><img src="./images/svg/1firm.svg" alt="" /></a>
+            <a href=""><img src="./images/svg/ya&co.svg" alt="YA & CO" /></a>
           </li>
           <li>
-            <a href=""><img src="./images/svg/2firm.svg" alt="" /></a>
+            <a href=""><img src="./images/svg/tagline.svg" alt="COMPANY TAGLINE HERE" /></a>
           </li>
           <li>
-            <a href=""><img src="./images/svg/3firm.svg" alt="" /></a>
+            <a href=""><img src="./images/svg/company.svg" alt="COMPANY" /></a>
           </li>
           <li>
-            <a href=""><img src="./images/svg/4firm.svg" alt="" /></a>
+            <a href=""><img src="./images/svg/foster.svg" alt="FOSTER PETERS" /></a>
           </li>
           <li>
-            <a href=""><img src="./images/svg/5firm.svg" alt="" /></a>
+            <a href=""><img src="./images/svg/brand.svg" alt="BRAND" /></a>
           </li>
           <li>
-            <a href=""><img src="./images/svg/6firm.svg" alt="" /></a>
+            <a href=""><img src="./images/svg/tag.svg" alt="COMPANY TAG LINE" /></a>
           </li>
         </ul>
       </section>
@@ -186,32 +240,35 @@
         <span class="logo">Web</span><span class="footer-logo">Studio</span>
       </a>
       <address>
-        <ul>
-          <li class="street">
+        <ul class="list">
+          <li>
             <a
               href="https://goo.gl/maps/wcCM6j37VZqPyRbJ7"
+              class="street link"
               target="_blank"
               rel="noopener noreferrer nofollow"
               >г. Киев, пр-т Леси Украинки, 26
             </a>
           </li>
-          <li><a class="foot-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="foot-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a class="foot-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li><a class="foot-contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
       <strong>ПРИСОЕДИНЯЙТЕСЬ</strong>
       <ul class="list">
         <li>
-          <a href=""><img src="./images/svg/inst.svg" alt="" /></a>
+          <a href=""><img src="./images/svg/inst.svg" class="social-links" alt="Instagram" /></a>
         </li>
         <li>
-          <a href=""><img src="./images/svg/twitter.svg" alt="" /></a>
+          <a href=""><img src="./images/svg/twitter.svg" class="social-links" alt="Twitter" /></a>
         </li>
         <li>
-          <a href=""><img src="./images/svg/facebook.svg" alt="" /></a>
+          <a href=""><img src="./images/svg/facebook.svg" class="social-links" alt="Facebook" /></a>
         </li>
         <li>
-          <a href=""><img src="./images/svg/linkedin.svg" alt="" /></a>
+          <a href=""><img src="./images/svg/linkedin.svg" class="social-links" alt="Linkedin" /></a>
         </li>
       </ul>
     </footer>
