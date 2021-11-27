@@ -82,13 +82,9 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   background-color: var(--current-color);
   color: var(--white-colour);
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 .order-service:focus,
