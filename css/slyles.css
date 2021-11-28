@@ -154,6 +154,7 @@ body {
   background-color: var(--current-color);
 }
 .product {
+  cursor: pointer;
 }
 .product:hover,
 .product:focus {
