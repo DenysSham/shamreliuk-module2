@@ -8,9 +8,16 @@
   --background: #2f303a;
 }
 /* ОБЩИЕ НАСТРОЙКИ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: roboto, sans-serif;
   color: var(--primary-text-color);
+  margin: 0;
 }
 .list {
   list-style: none;
